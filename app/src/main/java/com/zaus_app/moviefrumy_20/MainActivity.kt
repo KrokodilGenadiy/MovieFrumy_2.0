@@ -52,11 +52,17 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.notifications -> {
-                    Toast.makeText(this, "Посмотреть похже", Toast.LENGTH_SHORT).show()
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.fragment_placeholder, NotificationsFragment())
+                        .commit()
                     true
                 }
                 R.id.ball -> {
-                    Toast.makeText(this, "Подборки", Toast.LENGTH_SHORT).show()
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.fragment_placeholder, BallFragment())
+                        .commit()
                     true
                 }
                 else -> false
