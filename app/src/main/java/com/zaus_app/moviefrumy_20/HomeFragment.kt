@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zaus_app.moviefrumy_20.databinding.FragmentHomeBinding
+import java.util.*
 
 
 class HomeFragment : Fragment() {
@@ -47,15 +49,34 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.mainRecycler.apply {
+        binding.include.mainRecycler.apply {
             adapter = filmsAdapter
             layoutManager = LinearLayoutManager(requireContext())
             val decorator = TopSpacingItemDecoration(8)
             addItemDecoration(decorator)
         }
         updateData(filmsDataBase)
+        initSearchView()
     }
 
+    private fun initSearchView() {
+        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return true
+            }
+            override fun onQueryTextChange(newText: String): Boolean {
+                if (newText.isEmpty()) {
+                    updateData(filmsDataBase)
+                    return true
+                }
+                val result = filmsDataBase.filter {
+                    it.title.lowercase(Locale.getDefault()).contains(newText.lowercase(Locale.getDefault()))
+                }
+                updateData(result)
+                return true
+            }
+        })
+    }
     private fun getFilm(position: Int): Film {
         return filmsAdapter.getItems()[position]
     }
