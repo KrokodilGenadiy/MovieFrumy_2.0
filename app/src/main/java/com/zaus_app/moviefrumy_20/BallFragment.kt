@@ -19,6 +19,11 @@ class BallFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        AnimationHelper.performFragmentCircularRevealAnimation(binding.ballFragmentRoot, requireActivity(), 4)
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

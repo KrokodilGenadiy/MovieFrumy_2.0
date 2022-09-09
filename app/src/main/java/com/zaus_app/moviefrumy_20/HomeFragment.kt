@@ -24,8 +24,6 @@ class HomeFragment : Fragment() {
         })
     }
 
-
-
     val filmsDataBase = listOf(
         Film("The Shawshank Redemption", R.drawable.shawshank, "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."),
         Film("The Godfather", R.drawable.god_father, "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."),
@@ -57,6 +55,7 @@ class HomeFragment : Fragment() {
         }
         updateData(filmsDataBase)
         initSearchView()
+        AnimationHelper.performFragmentCircularRevealAnimation(binding.homeFragmentRoot, requireActivity(), 1)
     }
 
     private fun initSearchView() {
@@ -77,6 +76,7 @@ class HomeFragment : Fragment() {
             }
         })
     }
+
     private fun getFilm(position: Int): Film {
         return filmsAdapter.getItems()[position]
     }

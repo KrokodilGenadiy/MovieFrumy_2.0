@@ -4,8 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/background.xml" value="0.195" />
+        <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/background_ball.xml" value="0.321" />
+        <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/background_favorites.xml" value="0.321" />
+        <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/background_home.xml" value="0.321" />
+        <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/background_notifcations.xml" value="0.321" />
         <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/background_search_view.xml" value="0.321" />
         <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/background_transparent_collapsing_toolbar.xml" value="0.195" />
+        <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/empty_background.xml" value="0.321" />
         <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/ic_launcher_background.xml" value="0.321" />
         <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/ic_round_add_favorite.xml" value="0.321" />
         <entry key="..\:/Users/alexu/AndroidStudioProjects/MovieFrumy_20/app/src/main/res/drawable/ic_round_all_movies.xml" value="0.321" />

@@ -38,6 +38,7 @@ class FavoritesFragment : Fragment() {
             addItemDecoration(decorator)
         }
         updateData(FavoritesDatabase.favoritesList)
+        AnimationHelper.performFragmentCircularRevealAnimation(binding.favoritesFragmentRoot, requireActivity(), 2)
     }
 
     private fun updateData(newList: List<Film>){

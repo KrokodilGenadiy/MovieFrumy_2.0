@@ -2,8 +2,7 @@ package com.zaus_app.moviefrumy_20
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.zaus_app.moviefrumy_20.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -34,35 +33,41 @@ class MainActivity : AppCompatActivity() {
             .commit()
     }
 
+    private fun checkFragmentExistence(tag: String): Fragment? = supportFragmentManager.findFragmentByTag(tag)
+
+    private fun changeFragment(fragment: Fragment, tag: String) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_placeholder, fragment, tag)
+            .addToBackStack(null)
+            .commit()
+    }
+
     private fun initNavigation() {
         binding.bottomNavigation.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.fragment_placeholder, HomeFragment())
-                        .commit()
+                    val tag = "home"
+                    val fragment = checkFragmentExistence(tag)
+                    changeFragment( fragment?: HomeFragment(), tag)
                     true
                 }
                 R.id.favorites -> {
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.fragment_placeholder, FavoritesFragment())
-                        .commit()
+                    val tag = "favorites"
+                    val fragment = checkFragmentExistence(tag)
+                    changeFragment( fragment?: FavoritesFragment(), tag)
                     true
                 }
                 R.id.notifications -> {
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.fragment_placeholder, NotificationsFragment())
-                        .commit()
+                    val tag = "watch_later"
+                    val fragment = checkFragmentExistence(tag)
+                    changeFragment( fragment?: NotificationsFragment(), tag)
                     true
                 }
                 R.id.ball -> {
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.fragment_placeholder, BallFragment())
-                        .commit()
+                    val tag = "selections"
+                    val fragment = checkFragmentExistence(tag)
+                    changeFragment( fragment?: BallFragment(), tag)
                     true
                 }
                 else -> false

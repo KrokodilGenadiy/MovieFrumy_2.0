@@ -21,6 +21,11 @@ class NotificationsFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        AnimationHelper.performFragmentCircularRevealAnimation(binding.notificationFragmentRoot, requireActivity(), 3)
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
