@@ -8,6 +8,7 @@ class App : Application() {
     lateinit var repo: MainRepository
     lateinit var interactor: Interactor
 
+
     override fun onCreate() {
         super.onCreate()
         instance = this
