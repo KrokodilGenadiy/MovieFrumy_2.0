@@ -5,7 +5,6 @@ import com.zaus_app.moviefrumy_20.data.MainRepository
 import com.zaus_app.moviefrumy_20.domain.Interactor
 
 class App : Application() {
-
     lateinit var repo: MainRepository
     lateinit var interactor: Interactor
 
