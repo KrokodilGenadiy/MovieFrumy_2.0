@@ -7,7 +7,7 @@
     android:visibility="invisible"
     tools:visibility="visible"
     android:background="@drawable/background_notifcations"
-    tools:context=".NotificationsFragment">
+    tools:context=".view.fragments.NotificationsFragment">
 
 
 </FrameLayout>

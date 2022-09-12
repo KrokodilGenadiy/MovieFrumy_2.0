@@ -1,7 +1,8 @@
-package com.zaus_app.moviefrumy_20
+package com.zaus_app.moviefrumy_20.view.rv_viewholders
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.zaus_app.moviefrumy_20.domain.Film
 import com.zaus_app.moviefrumy_20.databinding.FilmItemBinding
 
 

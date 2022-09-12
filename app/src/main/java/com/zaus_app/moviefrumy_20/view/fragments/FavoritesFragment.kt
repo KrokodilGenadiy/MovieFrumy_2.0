@@ -1,4 +1,4 @@
-package com.zaus_app.moviefrumy_20
+package com.zaus_app.moviefrumy_20.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.zaus_app.moviefrumy_20.data.FavoritesDatabase
+import com.zaus_app.moviefrumy_20.domain.Film
 import com.zaus_app.moviefrumy_20.databinding.FragmentFavoritesBinding
+import com.zaus_app.moviefrumy_20.utils.AnimationHelper
+import com.zaus_app.moviefrumy_20.view.MainActivity
+import com.zaus_app.moviefrumy_20.view.rv_adaptes.FilmAdapter
+import com.zaus_app.moviefrumy_20.view.rv_adaptes.TopSpacingItemDecoration
+import com.zaus_app.moviefrumy_20.view.rv_adaptes.FilmDiff
 
 
 class FavoritesFragment : Fragment() {

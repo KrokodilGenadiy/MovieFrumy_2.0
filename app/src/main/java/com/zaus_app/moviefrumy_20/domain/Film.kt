@@ -1,4 +1,4 @@
-package com.zaus_app.moviefrumy_20
+package com.zaus_app.moviefrumy_20.domain
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

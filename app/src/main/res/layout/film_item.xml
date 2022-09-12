@@ -7,7 +7,7 @@
     android:elevation="1dp"
     app:cardCornerRadius="10dp">
 
-    <com.zaus_app.moviefrumy_20.RatingDonutView
+    <com.zaus_app.moviefrumy_20.view.custom_views.RatingDonutView
         android:id="@+id/rating_donut"
         android:layout_width="50dp"
         android:layout_height="50dp"

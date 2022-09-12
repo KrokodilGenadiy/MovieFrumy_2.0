@@ -7,7 +7,7 @@
     android:visibility="invisible"
     tools:visibility="visible"
     android:background="@drawable/background_ball"
-    tools:context=".BallFragment">
+    tools:context=".view.fragments.BallFragment">
 
 
 

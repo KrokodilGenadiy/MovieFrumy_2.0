@@ -1,4 +1,4 @@
-package com.zaus_app.moviefrumy_20
+package com.zaus_app.moviefrumy_20.utils
 
 import android.app.Activity
 import android.view.View

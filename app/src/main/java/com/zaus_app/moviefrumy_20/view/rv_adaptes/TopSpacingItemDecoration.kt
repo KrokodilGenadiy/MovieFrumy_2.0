@@ -1,4 +1,4 @@
-package com.zaus_app.moviefrumy_20
+package com.zaus_app.moviefrumy_20.view.rv_adaptes
 
 import android.content.res.Resources
 import android.graphics.Rect

@@ -1,12 +1,14 @@
-package com.zaus_app.moviefrumy_20
+package com.zaus_app.moviefrumy_20.view.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import android.transition.TransitionInflater
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.zaus_app.moviefrumy_20.data.FavoritesDatabase
+import com.zaus_app.moviefrumy_20.R
+import com.zaus_app.moviefrumy_20.domain.Film
 import com.zaus_app.moviefrumy_20.databinding.FragmentDetailsBinding
 
 

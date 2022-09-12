@@ -1,8 +1,10 @@
-package com.zaus_app.moviefrumy_20
+package com.zaus_app.moviefrumy_20.view.rv_adaptes
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.zaus_app.moviefrumy_20.view.rv_viewholders.FilmViewHolder
+import com.zaus_app.moviefrumy_20.domain.Film
 import com.zaus_app.moviefrumy_20.databinding.FilmItemBinding
 
 class FilmAdapter(private val clickListener: OnItemClickListener) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {

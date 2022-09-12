@@ -1,6 +1,7 @@
-package com.zaus_app.moviefrumy_20
+package com.zaus_app.moviefrumy_20.view.rv_adaptes
 
 import androidx.recyclerview.widget.DiffUtil
+import com.zaus_app.moviefrumy_20.domain.Film
 
 class FilmDiff(val oldList: List<Film>, val newList: List<Film>) :
     DiffUtil.Callback() {

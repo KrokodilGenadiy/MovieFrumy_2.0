@@ -1,9 +1,12 @@
-package com.zaus_app.moviefrumy_20
+package com.zaus_app.moviefrumy_20.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.zaus_app.moviefrumy_20.R
+import com.zaus_app.moviefrumy_20.domain.Film
 import com.zaus_app.moviefrumy_20.databinding.ActivityMainBinding
+import com.zaus_app.moviefrumy_20.view.fragments.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
